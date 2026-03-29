@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-poppins);
+  
+  --color-luxury-black: #0B0B0B;
+  --color-luxury-gold: #D4AF37;
+  --color-luxury-cream: #F5F5DC;
+  --color-luxury-maroon: #800000;
+}
+
+@layer base {
+  body {
+    @apply bg-luxury-black text-luxury-cream font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5F5DC 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border: 1px solid #D4AF37;
+}
+
+.gold-bg {
+  background-color: #D4AF37;
+}
+
+.luxury-shadow {
+  box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.3);
+}
